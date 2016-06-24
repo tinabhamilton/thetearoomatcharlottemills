@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["J7lEz"]); }
+
+__d('ArtilleryReporting',['Artillery','Banzai'],function a(b,c,d,e,f,g){if(c.__markCompiled)c.__markCompiled();var h='artillery_javascript_trace',i=false;f.exports.init=function(){if(i)return;i=true;c('Artillery').addRetroactiveListener('posttrace',function(j){if(c('Artillery').isEnabled())c('Banzai').post(h,j,{retry:true,delay:10*1000});});};},null);
